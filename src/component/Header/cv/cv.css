@@ -1,8 +1,9 @@
 
 .cv-box{ 
-    margin: 9rem 0  0 10rem;
+    margin-top: 9rem;
     width: 210px; 
-    min-height: 410px; 
+    min-height: 410px;  
+    max-height: 410px;
 
     border: solid white;
     border-top-left-radius: 105px; 

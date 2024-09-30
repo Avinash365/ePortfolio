@@ -21,7 +21,8 @@
     border-bottom-right-radius: 30px;
 }  */
 .me-box {
-    color: aliceblue;
+    color: aliceblue; 
+    /* border: solid white; */
     width: fit-content;
     height: fit-content;
     padding: 1rem;
@@ -57,9 +58,11 @@
 
 
 .about-me {
-    width: 600px;
-    height: fit-content;
-    border-radius: 10px;
+    min-width: 600px;  
+    max-width: 600px;
+    max-height: 300px;
+    border-radius: 10px; 
+    /* border: solid wheat; */
     padding: 1rem;
     margin-top: 1rem;
     /* background-color: #fff; Optional: set a background color for better visibility */
