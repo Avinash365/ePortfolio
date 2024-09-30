@@ -1,0 +1,77 @@
+.project-box{
+    min-width: 70%;  
+    /* border: solid white; */
+    
+    border-top: solid 1px white;  
+    border-bottom: solid 1px white;
+    height: auto; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 3rem;   
+    padding: 3rem 0 3rem 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem;
+} 
+.project-img{
+    width: 20%; 
+    height: 200px;
+} 
+.project-disc{  
+    /* border: solid white; */
+    /* display: inline; */
+    margin: 0px;  
+    padding: 0px;
+    width: 70%; 
+    height: auto; 
+    /* border: solid white;  */
+    color:white;  
+} 
+.scroll-btn{
+    color: #12F7D6; 
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    gap:1rem;  
+    margin: 1rem 0 0 0;
+} 
+.scroll-left-btn , .scroll-right-btn {
+    color: #12F7D6; 
+    font-size: 50px; 
+    padding: 2rem 0 0 2rem; 
+    cursor: pointer; 
+    transition: color 0.3s ease, transform 0.3s ease;
+} 
+.scroll-left-btn:hover,
+.scroll-right-btn:hover {
+    color: #0FD4B8; /* Change the color slightly on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+.project-link-box-btn{   
+    /* display: none; */
+
+    border: solid white; 
+    margin-top: 1rem; 
+    font-size: large;
+    padding: 0.5rem 1rem 0.5rem 1rem;  
+    color: white; 
+    cursor: pointer; 
+
+} 
+.scroll-box { 
+    /* border: solid #ffffff; */
+    display: flex;  
+    margin-left: 5%;
+    overflow: hidden; /* This hides the scrollbar */
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    width: 95%;
+    gap: 8rem;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* For Webkit browsers like Chrome, Safari, etc. */
+.scroll-box::-webkit-scrollbar {
+    display: none;
+}

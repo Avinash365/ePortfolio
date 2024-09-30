@@ -1,0 +1,33 @@
+.title-1-box{  
+    color: aqua;  
+    margin-top: 13rem;
+    width: 170px;  
+    height: 350px;
+    background-color: #1A1E23;  
+    border-radius: 55px; 
+    display: flex; 
+    gap: 1rem;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+} 
+.taxtLine{ 
+    width: min-content; 
+    padding: 0;
+    height: min-content;
+    display: flex;  
+    flex-wrap: nowrap; 
+    gap: 1rem;
+    align-items: center; 
+    justify-content: center;  
+    background-color: #1A1E23;
+}  
+.taxtLine > h2 {
+    margin: 0px; 
+    padding: 0px;  
+    background-color: #1A1E23;
+} 
+.taxtLine > p{
+    color: white; 
+    background-color: #1A1E23;
+}

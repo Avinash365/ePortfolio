@@ -1,0 +1,8 @@
+
+.header-box{
+    display: flex; 
+    gap: 10rem; 
+    /* border: solid white;   */
+    margin-left: 5rem;
+    width: fit-content;
+}

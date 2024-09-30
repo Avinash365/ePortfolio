@@ -1,0 +1,123 @@
+.AboutMe-box { 
+    /* border: solid white;   */
+    width: 100%; /* Adjust width if needed */
+    height: fit-content; /* Adjust height if needed */
+    padding:4rem 0 4rem 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 4rem; 
+    background-image: url('../../../public/Picture2.png'); /* Correct path */
+    background-size: cover; 
+    background-position: center;
+}
+/*
+.me-box {
+    color: aliceblue;  
+    width: fit-content; 
+    height: fit-content; 
+    padding: 1rem;
+    border: solid #12F7D6;
+    border-top-left-radius: 30px; 
+    border-bottom-right-radius: 30px;
+}  */
+.me-box {
+    color: aliceblue;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    border: 4px solid #12F7D6; /* Define the initial border color and width */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: border-color 0.5s ease; /* Smooth transition for the border color change */ 
+    cursor: pointer;
+}
+
+@keyframes rotate-border {
+    0% {
+        border-color: #12F7D6; /* Initial border color */
+    }
+    25% {
+        border-color: #FF5722; /* Color at 25% of the animation */
+    }
+    50% {
+        border-color: #4CAF50; /* Color at 50% of the animation */
+    }
+    75% {
+        border-color: #3F51B5; /* Color at 75% of the animation */
+    }
+    100% {
+        border-color: #12F7D6; /* End color (same as start) */
+    }
+}
+
+.me-box:hover {
+    animation: rotate-border 1.5s linear infinite; /* Apply the animation on hover */ 
+    transform: scale(1.05);
+}
+
+
+.about-me {
+    width: 600px;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    /* background-color: #fff; Optional: set a background color for better visibility */
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */ 
+    cursor: pointer;
+}  
+.about-me:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transform: scale(1.05); /* Slightly enlarge the element */
+}
+
+.about-me > p {
+    color: white;
+    font-size: small;
+} 
+/*.img-box-div{ 
+    width: 300px; 
+    height: 400px;
+    border-radius: 10px;  
+}
+.img-box-div > img { 
+    object-fit: cover;
+    width: 100%; 
+    height: 100%;  
+    border-radius: 10px;
+} */ 
+.img-box-div {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    position: relative; /* Create a positioning context for the overlay */
+    overflow: hidden; /* Ensure the overlay stays within bounds */ 
+    cursor: pointer;
+}
+
+.img-box-div > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease; /* Smooth transition for the image opacity */
+}
+
+.img-box-div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark semi-transparent overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+}
+.img-box-div:hover{
+    transform: scale(1.1);
+}
+.img-box-div:hover::after {
+    opacity: 1; /* Show the overlay on hover */
+}
+

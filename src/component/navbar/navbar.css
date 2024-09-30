@@ -1,0 +1,47 @@
+
+.navbar{ 
+    background-color: #292f36;
+    max-width: 90%; 
+    max-height: 70px;  
+    min-height: 70px;
+    margin: 2rem 0 0 4rem; 
+    color: aliceblue; 
+    /* border: solid 1px wheat;  */ 
+    border-bottom: solid;
+    display: flex;  
+    align-items: center; 
+    gap: 1rem;
+}  
+
+.active{
+    color: #12f7d6;
+    width: fit-content;  
+    height: fit-content;  
+    padding: 0.3rem; 
+     
+    text-decoration: none;
+} 
+.inactive{ 
+    color: white;  
+    width: fit-content;  
+    height: fit-content;  
+    padding: 0.3rem; 
+     
+    text-decoration: none;
+}  
+.leftItem{
+    margin-left: auto;  
+    display: flex;
+    gap:2rem; 
+}
+.rightItem{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.navicon{
+    margin-right:1rem;
+    margin-top: 0.1rem;
+    color: #12f7d6; 
+    cursor: pointer; /* Add this line */
+} 

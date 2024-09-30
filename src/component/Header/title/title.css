@@ -1,0 +1,21 @@
+.title-box{ 
+    width: fit-content; 
+    height: fit-content; 
+    /* border: solid wheat;  */
+    color:white;
+} 
+.title-box > h1{
+    font-size:60px; 
+    color:#98FAEC;
+} 
+.title-box > h2{ 
+    margin: 0px;
+    font-size: 40px;
+} 
+.title-box > p{
+    margin: 0;
+}
+.title-box > span{
+    color: #12f7d6; 
+    font-size: 20px;
+} 

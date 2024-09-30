@@ -1,0 +1,93 @@
+.lazyNavbar {
+    background-color: #393d41;
+    max-width: 90%;
+    max-height: 70px;
+    min-height: 70px;
+    margin: 2rem 0 2rem 4rem;
+    color: #393d41;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); */
+    position: relative; /* For positioning pseudo-elements */
+    overflow: hidden; /* Ensure animation stays within bounds */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Ensure content remains visible */
+.lazyNavbar > * {
+    position: relative;
+    z-index: 2;
+} 
+
+.inactive1 {
+    background-color: #393d41; 
+    color: #393d41;
+    border-radius: 2px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.lazyLeftItem1 {
+    margin-left: auto;  
+    margin-right: 2rem;
+    display: flex;
+    gap: 2rem; 
+    background-color: #393d41;
+}
+
+.lazyRightItem1 {  
+    background-color: #393d41;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+
+
+
+/* Loading effect on lazyNavbar */
+.lazyNavbar::before {
+    content: ""; 
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay */
+    /* animation: loadingEffect 10s infinite; Loading animation */
+    transform: translateX(-100%);
+    z-index: 1; /* Ensure it is below other content */
+}
+
+/* Visual effect during lazy loading for inactive1 */
+.inactive1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: loadingEffect 1.5s infinite;
+    transform: translateX(-100%);
+}
+
+/* Animation for loading effect */
+@keyframes loadingEffect {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

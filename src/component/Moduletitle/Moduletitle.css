@@ -1,0 +1,15 @@
+
+.moduletitle {
+    width: 100%; 
+    height: fit-content; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex; 
+    flex-direction: column; 
+    /* border: solid white;  */ 
+    background: rgba(0, 0, 0, 0); 
+    align-items: center;
+}  
+.moduletitle > *{
+    background: rgba(0, 0, 0, 0); 
+} 

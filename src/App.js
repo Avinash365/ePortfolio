@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+import { Suspense, lazy } from 'react';
+
+
+import Menubar from './component/menubar/Menubar';
+import Header from './component/Header/Header';
+import Aboutme from './component/Aboutme/Aboutme';
+import Skil from './component/Skils/Skil';
+import Project from './component/Project/Project';   
+import Contact from './component/Contect/Contact'; 
+import Footer from './component/Footer/Footer';
+
+import LazyNavbar from './lazyLoading/lazyNavbar/LazyNavbar'
+
+
+function delayForDemo(promise){
+  return new Promise(resolve =>{
+    setTimeout(resolve,2000); 
+  }).then(()=>promise)
+}
+
+
+
+const Navbar = lazy(() => delayForDemo(import('./component/navbar/Navbar')));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Suspense fallback={<LazyNavbar/>}>
+        <Navbar />
+      </Suspense>
+
+      <Menubar />
+      <Header />
+      <Aboutme />
+      <Skil />
+      <Project />  
+      <Contact/> 
+      
+      <Footer/>
+    </>
   );
-}
+} 
 
 export default App;

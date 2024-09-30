@@ -1,0 +1,89 @@
+
+.skil-box {
+     background-image: url('../../../public/skils_bc.png'); 
+     width: 100%; 
+     height: fit-content;  
+     padding-top: 3rem;  
+     padding-bottom: 3rem; 
+} 
+.skil-box1 > h1{
+     font-size: 100px; 
+     color: #12F7D6; 
+     background: rgb(0,0,0,0);
+} 
+.skil-box1{
+     /* border: solid white;  */
+     display: flex; 
+     width: fit-content; 
+     margin-left: 38%; 
+     margin-right:auto; 
+     background: rgb(0,0,0,0);
+}  
+.skilContentBox{
+     width: fit-content;  
+     padding: 1rem 2rem;
+     height: fit-content; 
+     background-color: #12F7D6; 
+     border-left: solid 5px; 
+     border-color: #3037b8;  
+     border-radius: 10px; 
+     display: flex; 
+     flex-direction: column; 
+     /* justify-content: center;  */
+     align-items: center; 
+     transition: transform 0.3s ease;  
+     cursor: pointer;
+}  
+.skilContentBox:hover{
+   transform: scale(1.1);
+}  
+
+.skilContentBox > *{
+     background: rgb(0,0,0,0); 
+     margin: 5px 0px 0px 0px; 
+     padding: 0px; 
+     color: black; 
+
+} 
+
+.skil-box2 { 
+
+     margin: 2rem 0 0 0;
+     display: flex; 
+     align-items: center; 
+     justify-content: center;  
+     gap:2rem;  
+     background: rgb(0,0,0,0);  
+}  
+.Icon-Box1{  
+     width: fit-content; 
+     display: flex; 
+     flex-direction: column;
+     justify-content: center; 
+     align-items: center; 
+     background-color: rgb(0,0,0,0);  
+     transition: transform 0.3s ease;  
+     cursor: pointer;
+
+} 
+.Icon-Box1:hover {
+     transform: scale(1.1);
+}
+
+.Icon-Box{
+     width: 100Px; 
+     height: 100px; 
+     border-radius: 50%; 
+     background-color: #3037b8; 
+     display: flex; 
+     justify-content: center;
+     align-items: center; 
+} 
+.Icon-box-up{ 
+     margin: 5rem 0 1rem 0;
+     display: flex; 
+     gap:10rem;
+     justify-content: center; 
+     align-items: center; 
+     background-color: rgba(0,0,0,0);
+}

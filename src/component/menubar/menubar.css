@@ -1,0 +1,49 @@
+.menuContainer{
+    display: flex;  
+    gap:2rem; 
+    border: solid white;  
+} 
+
+.menuItems{ 
+    position: fixed;
+    margin: 2rem 0 0 4rem; 
+    width: 40px;  
+    height: fit-content; 
+    background-color: black;  
+    padding: 1rem 0 1rem 0;
+    border: solid;
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem;  
+    border: solid 0.5px  seashell;  
+    color: aliceblue;
+    border-radius: 20px;
+} 
+.menuItem{ 
+    margin-left: 0.5rem; 
+    background-color: black;
+    display: flex;
+    overflow: visible;
+    gap: 0; 
+    cursor: pointer;
+} 
+.box{  
+    display: none;
+    width: fit-content; 
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    margin-left: 1.2rem; 
+    background-color: aliceblue; 
+    color: black;  
+    border-radius: 3px;
+}  
+.menuIcon{ 
+    background-color:black;
+}
+/* Show the box on hover */
+.menuItem:hover .box { 
+    display: block;
+} 
+.menuIcon:hover{
+    /* color: #12f7d6; */ 
+    color: red;
+}

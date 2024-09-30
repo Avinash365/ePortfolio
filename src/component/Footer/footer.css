@@ -1,0 +1,23 @@
+.Footer_div {
+    min-width: fit-content;   
+    margin-top: 100px; 
+    border-top: solid 2px white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 12rem;  /* Initial gap */
+    flex-wrap: wrap;
+}
+
+/* Remove gap when the items wrap */
+@media (max-width: 1000px) {  /* Adjust the width as per your layout */
+    .Footer_div {
+        gap: 2rem;  /* No gap after wrapping */
+    }
+}
+
+.footer-icon{ 
+    display: flex; 
+    gap: 1rem;
+    color: #12F7D6; 
+}

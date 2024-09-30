@@ -1,0 +1,80 @@
+
+.cv-box{ 
+    margin: 9rem 0  0 10rem;
+    width: 210px; 
+    min-height: 410px; 
+
+    border: solid white;
+    border-top-left-radius: 105px; 
+    border-bottom-right-radius: 100px; 
+    border-top-color: #12f7d6; 
+    border-left-color: #12f7d6; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer; 
+
+    box-shadow: 0 4px 8px rgba(158, 212, 204, 0.4); /* Match shadow color with border color and adjust opacity */
+    transition: all 0.3s ease;
+}  
+.cv-box:hover {
+    box-shadow: 0 8px 16px rgba(124, 227, 212, 0.6);
+    transform: scale(1.05); /* Slightly enlarge the element */ 
+
+}
+
+.cv-box > .logo{
+    width: 100px; 
+    height: 100px;  
+    margin-top: 2rem;
+    border-radius: 50%;  
+    border: solid #12f7d6; 
+} 
+.cv-box > h2{
+    color: aliceblue; 
+    margin-bottom: 0px;
+}  
+.cv-box > p{
+    color: aliceblue; 
+    margin-top: 0; 
+    margin-bottom: 0;
+} 
+.cv-box > .cv-btn{ 
+    margin: 1rem 0 0 0;
+    width: 80%; 
+    height: 30px;  
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 1rem;
+    background-color: aliceblue; 
+    color: black; 
+    text-decoration: none;  
+    border-radius: 20px;
+} 
+.cv-skils{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 0.4rem;
+} 
+.cv-skils > span{ 
+    margin: 0px;
+    width: fit-content;
+    height: fit-content; 
+    font-size: smaller;  
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem; 
+    color: black;  
+    background-color: #12f7d6; 
+    border-radius: 10px;
+}  
+.cv-list{ 
+    margin: 0;
+    width: fit-content; 
+    color: aliceblue; 
+    display: flex;   
+    align-items: center; 
+    justify-content: center; 
+    gap: 1rem;
+    font-size: xx-small;
+}
